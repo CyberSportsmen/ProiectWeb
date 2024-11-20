@@ -7,6 +7,6 @@
 //    }, 200);
 //}
 
-const card = document.querySelector(".citat");
-
-card.addEventListener("click", () => {card.classList.add("reveal")})
+const cards = document.querySelectorAll(".citat");
+cards.forEach((card) => {card.addEventListener("mouseenter", () => {card.classList.add("reveal")})})
+console.log(cards);

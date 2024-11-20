@@ -138,29 +138,24 @@ footer a:hover {
     transition-duration: 0.5s;
 }
 
-.citat h2 {
-    color: #3f3f3f; /* Default color is gray */
-}
-
 .citat:hover {
     transform: scale(1.10);
 }
 
-.citat:hover h2 {
-    color: white;
-    animation-name: reveal;
+.citat h2 {
+    color: #3f3f3f;
+}
+
+.reveal h2{
+    animation-name: revealanimation;
     animation-fill-mode: forwards;
-    animation-duration: 2s;
+    animation-duration: 0.2s;
     animation-iteration-count: 1;
 }
 
-.citat h2.persist {
-    color: white !important;
-}
-
-@keyframes reveal {
+@keyframes revealanimation {
     from {
-        color: #3f3f3f;
+        color:#3f3f3f;
     }
     to {
         color: white;
