@@ -76,6 +76,7 @@ body {
     overflow: hidden;
     font-family: Arial, sans-serif;
     color: white;
+    overflow-y: scroll;
 }
 
 footer{
@@ -124,6 +125,7 @@ footer a:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
+    padding-bottom: 5em;
 }
 
 .citat {
