@@ -1,3 +1,5 @@
+//ASA NU!!!!!!
+
 //function ramaiAlb(element) {
 //    setTimeout(function() {
 //        let firstChild = element.firstElementChild;
@@ -6,6 +8,7 @@
 //        }
 //    }, 200);
 //}
+
 
 const cards = document.querySelectorAll(".citat");
 cards.forEach((card) => {card.addEventListener("mouseenter", () => {card.classList.add("reveal")})})
