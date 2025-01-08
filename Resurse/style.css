@@ -12,7 +12,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 20px; /* Dimensiune mai mică pentru un efect de cursor */
+    width: 20px; /* Dimensiune mai mica pentru un efect de cursor */
     height: 20px;
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 20%, rgba(255, 140, 0, 0.8) 70%);
     border-radius: 50%;
@@ -39,7 +39,7 @@ body {
     animation: fadeOut 0.5s forwards; /* Efect de estompare */
 }
 
-/* Animație pentru estompare */
+/* Animatie pentru estompare */
 @keyframes fadeOut {
     to {
         opacity: 0;
@@ -241,15 +241,15 @@ footer a:hover {
 
 @media (max-width: 768px) {
     body {
-        cursor: default; /* Reafirmă cursorul implicit */
+        cursor: default;
     }
 
     #cursorEffect {
-        display: none; /* Ascunde efectul personalizat */
+        display: none; 
     }
 
     #cursorTrail {
-        display: none; /* Ascunde urma cursorului, dacă există */
+        display: none; 
     }
 }
 
