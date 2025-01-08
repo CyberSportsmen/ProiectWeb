@@ -138,6 +138,8 @@ footer a:hover {
     width: 300px;
     text-align: center;
     transition-duration: 0.5s;
+    overflow-wrap: anywhere; /* Rupe cuvintele prea lungi oriunde */
+    overflow: hidden; 
 }
 
 .citat:hover {
@@ -146,6 +148,14 @@ footer a:hover {
 
 .citat h2 {
     color: #3f3f3f;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+    line-height: 1.5;
+}
+
+.ascuns{
+    text-overflow:clip;
 }
 
 .reveal h2{
@@ -154,6 +164,24 @@ footer a:hover {
     animation-duration: 0.2s;
     animation-iteration-count: 1;
 }
+
+.add-citat {
+    font-size: 2em;
+    color: white;
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 1em auto;
+}
+
+
+
 
 @keyframes revealanimation {
     from {

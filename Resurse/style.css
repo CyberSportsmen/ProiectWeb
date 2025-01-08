@@ -3,6 +3,52 @@ h3{
     margin: 1%
 }
 
+body {
+    cursor: none; /* Ascunde cursorul normal */
+}
+
+
+#cursorEffect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px; /* Dimensiune mai mică pentru un efect de cursor */
+    height: 20px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 20%, rgba(255, 140, 0, 0.8) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    filter: drop-shadow(0 0 10px rgba(255, 140, 0, 0.6));
+    transition: transform 0.05s ease;
+}
+
+
+#cursorTrail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 140, 0, 0.6);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998; /* Un pic sub efectul principal */
+    opacity: 0.5;
+    filter: blur(4px); /* Estompează urma */
+    animation: fadeOut 0.5s forwards; /* Efect de estompare */
+}
+
+/* Animație pentru estompare */
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+
+
 nav {
     position: fixed;
     top: 0;
@@ -192,6 +238,21 @@ footer a:hover {
 /*
     Responsive
 */
+
+@media (max-width: 768px) {
+    body {
+        cursor: default; /* Reafirmă cursorul implicit */
+    }
+
+    #cursorEffect {
+        display: none; /* Ascunde efectul personalizat */
+    }
+
+    #cursorTrail {
+        display: none; /* Ascunde urma cursorului, dacă există */
+    }
+}
+
 @media (max-width: 768px) {
     .blob-container{
         margin-top: 15%;
