@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="ro">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/Resurse/scriptPoze.js" defer></script>
     <title>Poze</title>
-    <link rel="stylesheet" href="stylePoze.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
+    <link rel="stylesheet" href="stylePoze.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
     <nav>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger">☰</label>
-        <ul class="menu">
-            <li><a href="index.html">Acasa</a></li>
-            <li><a href="Poze.html">Poze</a></li>
-            <li><a href="Citate.html">Citate</a></li>
-            <li><a href="Recenzii_Jocuri.html">Recenzii Jocuri</a></li>
-            <li><a href="Random.html">Random</a></li>
-        </ul>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">☰</label>
+      <ul class="menu">
+        <li><a href="index.html">Acasa</a></li>
+        <li><a href="Poze.html">Poze</a></li>
+        <li><a href="Citate.html">Citate</a></li>
+        <li><a href="Recenzii_Jocuri.html">Recenzii Jocuri</a></li>
+        <li><a href="Random.html">Random</a></li>
+      </ul>
     </nav>
-    <h1 style="color:white">Build in progress...</h1>
+    <div id="lightbox" style="display: none">
+      <div id="lightbox-content">
+        <img id="lightbox-img" src="" alt="Pisică" />
+      </div>
+    </div>
+    <h1 style="color: white">Galerie de Pisici</h1>
+    <div
+      id="cat-gallery"
+      style="
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin: 20px;
+      "
+    ></div>
+
+    <button
+      id="load-cats"
+      style="
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 16px;
+      "
+    >
+      Încarcă Mai Multe Pisici
+    </button>
+
     <footer>
-        <h6>Proiect realizat de Alex Tinica</h6>
-        <h6>Profesor coordonator <a href="https://cs.unibuc.ro/~cechirita/">Claudia Elena Chirita</a></h6>
+      <h6>Proiect realizat de Alex Tinica</h6>
+      <h6>
+        Profesor coordonator
+        <a href="https://cs.unibuc.ro/~cechirita/">Claudia Elena Chirita</a>
+      </h6>
     </footer>
-</body>
+    <div class="pading"></div>
+  </body>
 </html>

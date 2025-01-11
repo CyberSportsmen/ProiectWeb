@@ -12,17 +12,17 @@ function onSubmit(event) {
     const notok = users.find((user) => user.username === username.value);
     if (notok) return alert("Username already taken!");
   }
-  const user = {
+  const newUser = {
     username: username.value,
     password: password.value,
   };
 
   if (!localStorage.getItem("users"))
-    localStorage.setItem("users", JSON.stringify([user]));
+    localStorage.setItem("users", JSON.stringify([newUser]));
   else
     localStorage.setItem(
       "users",
-      JSON.stringify([...JSON.parse(localStorage.getItem("users")), user])
+      JSON.stringify([...JSON.parse(localStorage.getItem("users")), newUser])
     );
   window.location.href = "/Resurse/Login.html";
   console.log(localStorage.getItem("users"));
