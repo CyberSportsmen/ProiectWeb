@@ -16,7 +16,9 @@ nav {
   align-items: center;
   justify-content: space-around;
 }
-
+.menu li button:hover {
+  color: #ff8c00 !important;
+}
 /* Meniu stil hamburger (3 linii orizontale)*/
 .hamburger {
   font-size: 2em;

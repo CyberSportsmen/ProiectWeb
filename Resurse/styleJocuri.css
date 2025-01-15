@@ -1,220 +1,222 @@
-
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #2f2f2f; 
-    color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2f2f2f;
+  color: white;
 }
 
-h3{
-    height: 1em;
-    margin: 1%
+h3 {
+  height: 1em;
+  margin: 1%;
 }
 
+.menu li button:hover {
+  color: #ff8c00 !important;
+}
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    height: 3em;
-    background-color: #2f2f2f;
-    padding: 0.5em;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 3em;
+  background-color: #2f2f2f;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /* Meniu stil hamburger (3 linii orizontale)*/
 .hamburger {
-    font-size: 2em;
-    color: white;
-    cursor: pointer;
-    display: block;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  display: block;
 }
 
 #menu-toggle {
-    display: none;
+  display: none;
 }
 
 .menu {
-    list-style: none;
-    display: none;
-    flex-direction: column;
-    background-color: #2f2f2f;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    border-top: 1px solid white;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  background-color: #2f2f2f;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border-top: 1px solid white;
 }
 
 #menu-toggle:checked + .hamburger + .menu {
-    display: flex;
+  display: flex;
 }
 
 .menu li {
-    padding: 1em;
-    border-bottom: 1px solid #444;
+  padding: 1em;
+  border-bottom: 1px solid #444;
 }
 
 .menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: large;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .menu li a:hover {
-    color: #ff8c00;
+  color: #ff8c00;
 }
 
 /* PENTRU ECRANE MAI MARI!! */
 @media (min-width: 768px) {
-    .hamburger {
-        display: none;
-    }
-    .menu {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        justify-content: space-around;
-        width: auto;
-        background: none;
-        border: none;
-    }
-    .menu li {
-        border: none;
-        padding: 0 1em;
-    }
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    justify-content: space-around;
+    width: auto;
+    background: none;
+    border: none;
+  }
+  .menu li {
+    border: none;
+    padding: 0 1em;
+  }
 }
 
 .main-content {
-    margin-top: 5em; /*margini pentru nav si footer*/
-    margin-bottom: 5em;
-    padding: 2em;
-    text-align: center;
+  margin-top: 5em; /*margini pentru nav si footer*/
+  margin-bottom: 5em;
+  padding: 2em;
+  text-align: center;
 }
 
 .reviews {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
 }
 
 .review {
-    background-color: #3f3f3f;
-    padding: 1em;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color:black;
-    width: 300px;
-    text-align: left;
-    transition-duration: 0.5s;
+  background-color: #3f3f3f;
+  padding: 1em;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  width: 300px;
+  text-align: left;
+  transition-duration: 0.5s;
 }
 
 .review h2 {
-    font-size: 1.5em;
-    color: #ff8c00;
+  font-size: 1.5em;
+  color: #ff8c00;
 }
 
 .review p {
-    font-size: 1em;
+  font-size: 1em;
 }
 
-article > p:last-child{
-    color:violet;
+article > p:last-child {
+  color: violet;
 }
 
-.review:hover{
-    transform: scale(1.10);
+.review:hover {
+  transform: scale(1.1);
 }
 
-footer{
-    width: 100%;
-    height: 2em;
-    position:fixed;
-    bottom: 0;
-    align-content:space-around;
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-    background-color: #2f2f2f;
-    padding-top: 0.5em;
+footer {
+  width: 100%;
+  height: 2em;
+  position: fixed;
+  bottom: 0;
+  align-content: space-around;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  background-color: #2f2f2f;
+  padding-top: 0.5em;
 }
 
-footer h6{
-    text-align: center;
-    justify-content: space-around;
-    font-size: large;
-    width: fit-content;
-    height: 1em;
-    padding: 0%;
-    border: 0;
-    margin-bottom: 1em;
-    margin-top: 2px;
-    overflow-x:visible;
+footer h6 {
+  text-align: center;
+  justify-content: space-around;
+  font-size: large;
+  width: fit-content;
+  height: 1em;
+  padding: 0%;
+  border: 0;
+  margin-bottom: 1em;
+  margin-top: 2px;
+  overflow-x: visible;
 }
 footer a {
-    color: #ff8c00;
-    text-decoration: none;
+  color: #ff8c00;
+  text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Design Responsive */
 @media (max-width: 768px) {
-    .main-content {
-        padding: 1em;
-    }
-    .reviews {
-        flex-direction: column;
-        align-items: center;
-    }
-    .review {
-        width: 90%;
-    }
-    footer h6{
-        font-size: medium;
-        margin: 0 2%;
-        text-wrap:nowrap;
-    }
-    footer{
-        position: fixed;
-        height: 5em !important;
-        width: 100%;
-        display: block !important;
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-        overflow-y: visible;
-        overflow-x: visible;
-        background-color: #2f2f2f;
-        color: white;
-        font-size: 0.8em;
-        text-align: center;
-        padding: 0.5em 0;
-        border-top: 2px solid white;
-    }
-    nav {
-        display:block;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
+  .main-content {
+    padding: 1em;
+  }
+  .reviews {
+    flex-direction: column;
+    align-items: center;
+  }
+  .review {
+    width: 90%;
+  }
+  footer h6 {
+    font-size: medium;
+    margin: 0 2%;
+    text-wrap: nowrap;
+  }
+  footer {
+    position: fixed;
+    height: 5em !important;
+    width: 100%;
+    display: block !important;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    overflow-y: visible;
+    overflow-x: visible;
+    background-color: #2f2f2f;
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0.5em 0;
+    border-top: 2px solid white;
+  }
+  nav {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
 
-    .menu-icon {
-        display: block;
-        font-size: 1.5em;
-        margin-right: auto;
-        cursor: pointer;
-    }
+  .menu-icon {
+    display: block;
+    font-size: 1.5em;
+    margin-right: auto;
+    cursor: pointer;
+  }
 }

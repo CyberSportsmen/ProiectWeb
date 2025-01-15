@@ -19,9 +19,9 @@ async function fetchCats() {
 
 document.getElementById("load-cats").addEventListener("click", fetchCats);
 
-// Încarcă primele imagini la încărcarea paginii
+// incarca primele imagini la incarcarea paginii
 fetchCats();
-// Creăm lightbox-ul pentru afișare pe tot ecranul
+// cream lightbox-ul pentru afisare pe tot ecranul
 const lightbox = document.createElement("div");
 lightbox.id = "lightbox";
 lightbox.style.display = "none";
@@ -30,7 +30,7 @@ document.body.appendChild(lightbox);
 const lightboxImg = document.createElement("img");
 lightbox.appendChild(lightboxImg);
 
-// La click pe imagine, afișăm lightbox-ul
+// la click pe imagine afisam lightbox-ul
 document.getElementById("cat-gallery").addEventListener("click", (event) => {
   if (event.target.tagName === "IMG") {
     lightboxImg.src = event.target.src;
@@ -38,7 +38,7 @@ document.getElementById("cat-gallery").addEventListener("click", (event) => {
   }
 });
 
-// La click pe fundalul lightbox-ului, îl închidem
+// la click pe fundalul lightbox-ului, il inchidem
 lightbox.addEventListener("click", () => {
   lightbox.style.display = "none";
 });
