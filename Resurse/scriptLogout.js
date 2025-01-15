@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   logoutButton.addEventListener("click", () => {
     localStorage.removeItem("session");
+    localStorage.removeItem("sessionTime");
     logoutButton.style.display = "none";
     loginListItem.style.display = "list-item";
     alert("Logged out successfully!");

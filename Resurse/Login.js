@@ -14,5 +14,6 @@ function onSubmit(event) {
   }
   // ne logam
   localStorage.setItem("session", JSON.stringify(username.value));
+  localStorage.setItem("sessionTime", JSON.stringify(Date.now())); // ca sa stim
   window.location.href = "/Resurse/index.html";
 }
