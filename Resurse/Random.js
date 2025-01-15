@@ -3,6 +3,8 @@ const butonulMeuFermecat = document.getElementById("horror");
 butonulMeuFermecat.addEventListener("mouseenter", (eveniment) => {
   const copil = butonulMeuFermecat.children[0];
 
+  eveniment.stopPropagation();
+
   if (!copil.classList.contains("invarte")) {
     copil.classList.add("invarte");
 
@@ -24,7 +26,14 @@ function genereazaCuloareRandom() {
 }
 
 function schimbaCuloare() {
-  const culoareNoua = genereazaCuloareRandom();
+  const stilCurent = getComputedStyle(linkRickroll);
+  const culoareCurenta = stilCurent.color;
+
+  let culoareNoua;
+  do {
+    culoareNoua = genereazaCuloareRandom();
+  } while (culoareNoua === culoareCurenta);
+
   linkRickroll.style.color = culoareNoua;
 }
 
