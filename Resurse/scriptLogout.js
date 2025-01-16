@@ -1,6 +1,6 @@
 function authGuard() {
   if (!localStorage.getItem("session"))
-    window.location.href = "/Resurse/Login.html";
+    window.location.href = "Login.html";
 }
 
 document.addEventListener("DOMContentLoaded", () => {

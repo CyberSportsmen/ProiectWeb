@@ -35,5 +35,5 @@ function onSubmit(event) {
   // Log in the user
   localStorage.setItem("session", JSON.stringify(username.value));
   localStorage.setItem("sessionTime", JSON.stringify(Date.now())); // Store the login time
-  window.location.href = "/Resurse/index.html";
+  window.location.href = "index.html";
 }
